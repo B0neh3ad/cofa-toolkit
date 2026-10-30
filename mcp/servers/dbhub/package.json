@@ -1,0 +1,12 @@
+{
+  "name": "cofa-mcp-dbhub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Optional pinned MCP runtime; install only if selected.",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "dependencies": {
+    "@bytebase/dbhub": "1.5.0"
+  }
+}

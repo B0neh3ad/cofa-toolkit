@@ -1,8 +1,0 @@
-order_id,team,quantity,unit_price,status
-o1,alpha,2,10.00,completed
-o2,alpha,1,5.00,completed
-o2,alpha,1,5.00,completed
-o3,beta,3,7.50,completed
-o4,beta,1,99.00,cancelled
-o5,beta,-1,7.50,completed
-o6,alpha,3,0.10,completed

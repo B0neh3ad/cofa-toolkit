@@ -13,4 +13,4 @@ Collect completed tasks as they finish. Integrate reviewed commits serially in t
 
 Reserve time for integration and the user's explanation of why, where, evidence, and limits. Reduce parallelism when shared files, resources, or late contract changes dominate. Follow existing permissions and assessment restrictions; do not modify managed settings or create external publication as part of this workflow.
 
-For Git command examples and a local fixture exercise, see ../../docs/PARALLEL_FAST_PATH.md. The worktree_lab.py fixture does not launch AI agents.
+Use only the Git worktree behavior actually supported by the host. Committed baselines, ignored setup, ports and databases require separate coordination; do not assume a new checkout copies them.

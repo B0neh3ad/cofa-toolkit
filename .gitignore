@@ -1,6 +1,5 @@
 .evidence/
 .parallel/
-cofa-worktree-lab-*/
 __pycache__/
 *.pyc
 .venv/
@@ -9,3 +8,6 @@ __pycache__/
 !.env.example
 *.pem
 *.key
+.cofa/
+node_modules/
+.DS_Store

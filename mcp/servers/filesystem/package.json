@@ -1,0 +1,12 @@
+{
+  "name": "cofa-mcp-filesystem",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Optional pinned MCP runtime; install only if selected.",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server-filesystem": "2.1.0"
+  }
+}

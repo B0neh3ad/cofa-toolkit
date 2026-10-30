@@ -1,0 +1,13 @@
+{
+  "core": ["domain-discovery", "systematic-debugging", "verification-before-completion", "evidence-check", "session-handoff", "explain-artifact"],
+  "domain": ["domain-discovery", "data-quality"],
+  "data": ["data-quality", "jupyter-notebook", "pdf", "property-based-testing"],
+  "web": ["frontend-design", "react-best-practices", "composition-patterns"],
+  "quality": ["test-driven-development", "verification-before-completion", "property-based-testing", "differential-review", "receiving-code-review"],
+  "parallel": ["parallel-delivery", "dispatching-parallel-agents", "using-git-worktrees", "subagent-driven-development", "requesting-code-review"],
+  "security": ["security-best-practices", "security-threat-model", "sharp-edges", "differential-review"],
+  "planning": ["brainstorming", "writing-plans", "executing-plans", "doc-coauthoring"],
+  "deep-audit": ["audit-context-building", "dimensional-analysis"],
+  "git-finish": ["finishing-a-development-branch"],
+  "python": ["modern-python"]
+}

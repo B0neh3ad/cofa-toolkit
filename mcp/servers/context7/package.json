@@ -1,0 +1,12 @@
+{
+  "name": "cofa-mcp-context7",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Optional pinned MCP runtime; install only if selected.",
+  "engines": {
+    "node": ">=20.18.1"
+  },
+  "dependencies": {
+    "@upstash/context7-mcp": "4.4.4"
+  }
+}

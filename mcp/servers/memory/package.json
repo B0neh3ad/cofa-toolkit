@@ -1,0 +1,12 @@
+{
+  "name": "cofa-mcp-memory",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Optional pinned MCP runtime; install only if selected.",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server-memory": "2.0.1"
+  }
+}

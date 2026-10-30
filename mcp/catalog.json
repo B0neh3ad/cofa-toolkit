@@ -1,0 +1,8 @@
+{
+  "filesystem": {"package": "@modelcontextprotocol/server-filesystem", "version": "2.1.0", "min_node": [24, 0, 0], "external_requests": false, "source": "https://github.com/modelcontextprotocol/servers/tree/194cc86e3ae6400958555bd4116849d822d69263/src/filesystem"},
+  "memory": {"package": "@modelcontextprotocol/server-memory", "version": "2.0.1", "min_node": [24, 0, 0], "external_requests": false, "source": "https://github.com/modelcontextprotocol/servers/tree/194cc86e3ae6400958555bd4116849d822d69263/src/memory"},
+  "sequential-thinking": {"package": "@modelcontextprotocol/server-sequential-thinking", "version": "2.0.0", "min_node": [24, 0, 0], "external_requests": false, "source": "https://github.com/modelcontextprotocol/servers/tree/194cc86e3ae6400958555bd4116849d822d69263/src/sequentialthinking"},
+  "context7": {"package": "@upstash/context7-mcp", "version": "4.4.4", "min_node": [20, 18, 1], "external_requests": true, "source": "https://github.com/upstash/context7"},
+  "dbhub": {"package": "@bytebase/dbhub", "version": "1.5.0", "min_node": [22, 5, 0], "external_requests": false, "source": "https://github.com/bytebase/dbhub"},
+  "openai-docs": {"url": "https://developers.openai.com/mcp", "external_requests": true, "source": "https://developers.openai.com/learn/docs-mcp"}
+}

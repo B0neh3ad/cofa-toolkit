@@ -1,0 +1,658 @@
+{
+  "checked_on": "2026-10-31",
+  "imports": [
+    {
+      "kind": "skill",
+      "name": "systematic-debugging",
+      "repository": "https://github.com/obra/superpowers",
+      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "source_path": "skills/systematic-debugging",
+      "destination": "skills/systematic-debugging",
+      "license": "MIT",
+      "changes": [
+        "Omitted upstream authoring/pressure-test documents: CREATION-LOG.md, test-academic.md, test-pressure-1.md, test-pressure-2.md, test-pressure-3.md"
+      ],
+      "files_sha256": {
+        "LICENSE.txt": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+        "SKILL.md": "51c6435d98c83c42c96ba7c35725a0b2c376cd487fb1a4e6bd0ddbe7e33ef202",
+        "condition-based-waiting-example.ts": "40ae5ebe497fdf310200e43fe986552546d0a22837c0d39e855db1cfd33eb88e",
+        "condition-based-waiting.md": "e89fec8400d6cd50f43407cec9fab50976ba4d55d0ec2eb51c0bd68036b54c26",
+        "defense-in-depth.md": "1e175fb86fc357e58c6aebf5441e481e1b7868b4380c0456b63a17eefbd18ba7",
+        "find-polluter.sh": "dd7b8f13c4cc2a24b33ff87b18da9248f3e1c80a085c3316224f69ff0fa5c43c",
+        "root-cause-tracing.md": "75b933b6a8c40bdb2031b10f21654395b56ec6ab6bc7b018c18d3fe57aeb7fb8"
+      }
+    },
+    {
+      "kind": "skill",
+      "name": "verification-before-completion",
+      "repository": "https://github.com/obra/superpowers",
+      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "source_path": "skills/verification-before-completion",
+      "destination": "skills/verification-before-completion",
+      "license": "MIT",
+      "changes": [],
+      "files_sha256": {
+        "LICENSE.txt": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+        "SKILL.md": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3"
+      }
+    },
+    {
+      "kind": "skill",
+      "name": "test-driven-development",
+      "repository": "https://github.com/obra/superpowers",
+      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "source_path": "skills/test-driven-development",
+      "destination": "skills/test-driven-development",
+      "license": "MIT",
+      "changes": [],
+      "files_sha256": {
+        "LICENSE.txt": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+        "SKILL.md": "64b03fce4aee5a97a93160cea8111f3ba13a17b7c001db4bd5836d67fd10705d",
+        "writing-good-tests.md": "51471c853306ff92ca8bb41dcaea05f31c0e46b03651f8f3c99754b7172f4ae1"
+      }
+    },
+    {
+      "kind": "skill",
+      "name": "dispatching-parallel-agents",
+      "repository": "https://github.com/obra/superpowers",
+      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "source_path": "skills/dispatching-parallel-agents",
+      "destination": "skills/dispatching-parallel-agents",
+      "license": "MIT",
+      "changes": [],
+      "files_sha256": {
+        "LICENSE.txt": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+        "SKILL.md": "1968923066f3b707eb01d1992cdf4c42284c3855f70253b9cd5000ff45fca13c"
+      }
+    },
+    {
+      "kind": "skill",
+      "name": "requesting-code-review",
+      "repository": "https://github.com/obra/superpowers",
+      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "source_path": "skills/requesting-code-review",
+      "destination": "skills/requesting-code-review",
+      "license": "MIT",
+      "changes": [],
+      "files_sha256": {
+        "LICENSE.txt": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+        "SKILL.md": "2180e14a448e9410bec88e6646a2d1f0ce7fdd58de27388c1e052e929679d2bc",
+        "code-reviewer.md": "82e370be6b3447523816286195571e4216ba56ba1ad6ad0e87862294c4c78dcb"
+      }
+    },
+    {
+      "kind": "skill",
+      "name": "receiving-code-review",
+      "repository": "https://github.com/obra/superpowers",
+      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "source_path": "skills/receiving-code-review",
+      "destination": "skills/receiving-code-review",
+      "license": "MIT",
+      "changes": [],
+      "files_sha256": {
+        "LICENSE.txt": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+        "SKILL.md": "091df1629510af1b92fc4abd6f96732ebedb4cb2c0f3457e8f2740b0504a2438"
+      }
+    },
+    {
+      "kind": "skill",
+      "name": "using-git-worktrees",
+      "repository": "https://github.com/obra/superpowers",
+      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "source_path": "skills/using-git-worktrees",
+      "destination": "skills/using-git-worktrees",
+      "license": "MIT",
+      "changes": [],
+      "files_sha256": {
+        "LICENSE.txt": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+        "SKILL.md": "8cfb86f121269e8f7f12361e6795c4f6738828340e28964c9229d365666c9edd"
+      }
+    },
+    {
+      "kind": "skill",
+      "name": "writing-plans",
+      "repository": "https://github.com/obra/superpowers",
+      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "source_path": "skills/writing-plans",
+      "destination": "skills/writing-plans",
+      "license": "MIT",
+      "changes": [],
+      "files_sha256": {
+        "LICENSE.txt": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+        "SKILL.md": "a6c67c1900064347c2a329990dd3c555657c51c3ec53b259a08aa01a2c26139a"
+      }
+    },
+    {
+      "kind": "skill",
+      "name": "subagent-driven-development",
+      "repository": "https://github.com/obra/superpowers",
+      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "source_path": "skills/subagent-driven-development",
+      "destination": "skills/subagent-driven-development",
+      "license": "MIT",
+      "changes": [],
+      "files_sha256": {
+        "LICENSE.txt": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+        "SKILL.md": "ba41f697136cba88a7962d60c8e2f97488ba04a8688b1d0fbeb27f6953808e75",
+        "implementer-prompt.md": "81dd9d5a3fb0b09b96b5829f03b9796842f3199ef7591d1ba1c2db2a515f64d0",
+        "re-review-prompt.md": "0828a5e9cbb12ba49f14621dd8c3953c48c0fc383e75bb5494f055ed0d6d824f",
+        "references/batching.md": "b54dc7e23dbfb90db89bcb2fb3af591aabf6a271a165fbc0da4c6f9439980eac",
+        "references/cannot-verify.md": "e698713a15e0eabf1a2ab26ffe1bb04bf70c9d6d2e2060d44a0f9a1bdd4408bf",
+        "references/final-review.md": "2fd999d86e5dd0b9b32aaf93f2a41663ef30b3e3cb78fb2fd5cb450eb59eb9de",
+        "references/fix-loop.md": "eafff1f801af2ced86e8761f3eeef04b701860d986ba5d0a8b20d506a75104bb",
+        "references/handling-reports.md": "8f759cdd4936220c38aab05b6d6c48c6df8ac8f146b0f37a6d2facbf87133c67",
+        "references/preflight.md": "3ea21c5fc1af1a190ac8a9d19ceb0849b47bf2ffe27b87dffcc21b6a0539776c",
+        "references/resuming.md": "ff6e38bde2276faa2a7e93513086caded0ea10edbf2ec7f349a7e3b0d7c668c4",
+        "scripts/review-package": "f9275175b2276b1d5fdb1bae0bedaadd2a950659b7c6f311ea37ff85e1861b1f",
+        "scripts/sdd-workspace": "4fd9770e7a49b6bde488c0e92bac1b3bd01fcbdaf8f06b6c4efbe3a1abd99f86",
+        "scripts/task-brief": "cc563538e09abf719b34ddf4b2fa7a65cf3b301729039dbfa923cb060f729146",
+        "task-reviewer-prompt.md": "bfed55c8f19d0ff6ed57b0fe09127c92890e9311c6c73917129598826bf9ebe8"
+      }
+    },
+    {
+      "kind": "skill",
+      "name": "brainstorming",
+      "repository": "https://github.com/obra/superpowers",
+      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "source_path": "skills/brainstorming",
+      "destination": "skills/brainstorming",
+      "license": "MIT",
+      "changes": [],
+      "files_sha256": {
+        "LICENSE.txt": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+        "SKILL.md": "61a7ef918652108c76a3fd01e02dd92d39996c6b46d4cb2819cbd03f6c45e46a",
+        "builder-check-prompt.md": "36d51a4723d6f0a3ce5811a0ea3b3a8424f07533947e1355f5d8cb8cce40c55e",
+        "scripts/frame-template.html": "6a8a4e58bd6a44b904e2e3c57de774481d909204597e1498de53f1b2fecc4c4e",
+        "scripts/helper.js": "43c6d69954a46ec34a2a262bcc62a9a7e83e839c739f199cb72646d397c686e3",
+        "scripts/server.cjs": "763abf96510e0b892a1141397b31aa82ef900cf87ed34dde94bc8782baf4a7ca",
+        "scripts/start-server.sh": "a4e5ae84275bcaacd2f84345afeabe59cf7b00ba080e123da7cc1fb226f12847",
+        "scripts/stop-server.sh": "0b5ccbbd57f62d3ed88993f7940b5ee0e5c0fc9b21c550c623da4f6292e47daf",
+        "visual-companion.md": "6ffcb038b53254bd31debaa15e12dcd4ff24bd63d690e0b644ac6396701cf2e2"
+      }
+    },
+    {
+      "kind": "skill",
+      "name": "frontend-design",
+      "repository": "https://github.com/anthropics/skills",
+      "commit": "ca45fc496a3436251f191354091d557da31c15b5",
+      "source_path": "skills/frontend-design",
+      "destination": "skills/frontend-design",
+      "license": "Apache-2.0",
+      "changes": [],
+      "files_sha256": {
+        "LICENSE.txt": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+        "SKILL.md": "d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3"
+      }
+    },
+    {
+      "kind": "skill",
+      "name": "doc-coauthoring",
+      "repository": "https://github.com/anthropics/skills",
+      "commit": "ca45fc496a3436251f191354091d557da31c15b5",
+      "source_path": "skills/doc-coauthoring",
+      "destination": "skills/doc-coauthoring",
+      "license": "Apache-2.0",
+      "changes": [],
+      "files_sha256": {
+        "LICENSE.txt": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+        "SKILL.md": "2e47d78846faeea4a56e9809c52700087a15a2155a3f293a3efbaded81398ef4"
+      }
+    },
+    {
+      "kind": "skill",
+      "name": "react-best-practices",
+      "repository": "https://github.com/vercel-labs/agent-skills",
+      "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "source_path": "skills/react-best-practices",
+      "destination": "skills/react-best-practices",
+      "license": "MIT",
+      "changes": [
+        "Repaired three local links in the compiled AGENTS.md to rules/."
+      ],
+      "files_sha256": {
+        "AGENTS.md": "1fe182a457585dc5d1f532beef4c956f2d071d452a1fa243602297c97b7eb7e4",
+        "LICENSE.txt": "508a77d2e7b51d98adeed32648ad124b7b30241a8e70b2e72c99f92d8e5874d1",
+        "README.md": "9eafb2123d3b8b2aef41fba0db2648a3f4f49996f8c7c8bb2c86263befd8b48a",
+        "SKILL.md": "71ed7794962fa6e803ee83030517b5b93a9f70fbfeb431ec4535c5480a8d8355",
+        "metadata.json": "c4e18bac3290fbe1b471a605867d4df68b03144ea26b8befdbe8f9d8fd124354",
+        "rules/_sections.md": "01c59969e4e867f0708c8f8ef9c6d87fab9a07d0586244f429ff84013db8a115",
+        "rules/_template.md": "99df2a3ea088c6c22de2484ddc7e964d0e9923846f44c63380343ecc64455442",
+        "rules/advanced-effect-event-deps.md": "55ed8f9f27a1bff803d6fa55828176207714b02123cbb97ddb8a90d88024a723",
+        "rules/advanced-event-handler-refs.md": "a3097edeecfb2ff6851cd66ed8cdf0617c3c88180504bee824aa6e75a215bbbc",
+        "rules/advanced-init-once.md": "3e4dc22173eb0e2b6dcf583e3babd862b8696328f8f59aee7c4d746c5bc05f6c",
+        "rules/advanced-use-latest.md": "8a3f64dfe5a77d1564248faf17fe662ae75b55d497a243cb30b38eb07ccbbf9a",
+        "rules/async-api-routes.md": "523338540d73427dc14c0cbb19f2741ebccdf8b105a7b2c1b33d2905cf237a42",
+        "rules/async-cheap-condition-before-await.md": "03107c1f70a293cd58a8abc5474c5548e20ea4efdf01b6d45aae7ad0ac1cb32c",
+        "rules/async-defer-await.md": "f3c142d090615abdcc99d31c123be37b31f0f1ed8d9ec9f7789a3bc6883ae0fb",
+        "rules/async-dependencies.md": "16ef469f877e30c6b8e1e1b4bc3e527312fa3c6318cb785a4eca186ea236131a",
+        "rules/async-parallel.md": "6d2f841896279e976dfcdc1ac89e70771ac188baadfd43c096b5706cb838b961",
+        "rules/async-suspense-boundaries.md": "de05fedac2eb7ae563b887b5a424464ec3dfaf84e5b7797467ebe2a796ac8afc",
+        "rules/bundle-analyzable-paths.md": "62090b5c815fd71bf1133dce754f51abc16a9456d0ccd025fd627de27726e92a",
+        "rules/bundle-barrel-imports.md": "e648f6d54525f07a691357040ca5bff6ea3424788a91ff63812adb29622a671b",
+        "rules/bundle-conditional.md": "09c8259c3efb04fc0abb8e412ccbda217c222ae8118516283e571c995fe3a7d4",
+        "rules/bundle-defer-third-party.md": "3719fb47b191e8db4fe22686ec88448ad5af9e6838585425abbe103d0b642e37",
+        "rules/bundle-dynamic-imports.md": "401817a7369f315fc5a68a1095742ff7d53d0461906880dc9d64a41495ee1986",
+        "rules/bundle-preload.md": "d1f7cc28da7cd5ab249acd287edc5b761afcfb194e9cb62cd44c5f3543db2de2",
+        "rules/client-event-listeners.md": "242a873349febc1ce685e85617994784dbab92c2eaa68aed7fed5a83e7680e93",
+        "rules/client-localstorage-schema.md": "0fb7cdf9dc93fdf22f87e3669f953fb9d4ac9b0be42eec4a29fe9a2560610b88",
+        "rules/client-passive-event-listeners.md": "1f35016f9053de69e884ee9be00654e37979c2ca85f5e57764dc2626ff7acb4b",
+        "rules/client-swr-dedup.md": "644652c39c6cc00de8d1c77a7273612e868dc3f7edda30764164c12ec0f764a3",
+        "rules/js-batch-dom-css.md": "480b891b9eaf96e929dc1e964274a4828e3a78009b7d00ccd965a0d425215959",
+        "rules/js-cache-function-results.md": "3daaa11d24f4295cb6be8bc6f407f2ce83cc7b5bd1f0e68891ea8ab835721dc7",
+        "rules/js-cache-property-access.md": "73e47431e74878a927061bf0ddc7cd91a7556cb35d2573f3421e82300d9ae311",
+        "rules/js-cache-storage.md": "11b826b0433898c1ece2d3547010d8e77db9fb240185748c45db91493de9b6cc",
+        "rules/js-combine-iterations.md": "71add08aeeb43091d4ff4c0b2842cce8b4bdef8ad3e732cc034bb5a84827e746",
+        "rules/js-early-exit.md": "925ce5ce87f3347186ca62212f29cc6baa2b8c85a96d2720ad07c3d0abf781c0",
+        "rules/js-flatmap-filter.md": "9e5b166a41914d975bef7635467f8fb32cd98b5c3126c0bc6f163490812fb5f0",
+        "rules/js-hoist-regexp.md": "f9e9aef2f7c2307dd7310f283df85dcada45fc43e9bb941b0c3aa414dec21ec4",
+        "rules/js-index-maps.md": "5df1bdc2cfabb2c98abd55d26762e5c18189535c2e686184f426082e62920391",
+        "rules/js-length-check-first.md": "8b54a311c826b299272f29187fc58bc55772a04c4a72eeb29456ee96dc9fc624",
+        "rules/js-min-max-loop.md": "87dfb67e2f39df6ad8bcfb5b78c5fb364d3c07554ad188a202408d99f3763421",
+        "rules/js-request-idle-callback.md": "ee08f83905b4011abbc33d594033157d77561b5bbd9b36b04f0f409581ffec32",
+        "rules/js-set-map-lookups.md": "a7fd781a6ba9ad49065961b6f9a90ef486bf6b648390e1a08704025f98e1642b",
+        "rules/js-tosorted-immutable.md": "d0a5e1b0fec48a0a81397957e2f068e224329f7c42cb5feeed8aae6fa64025e8",
+        "rules/rendering-activity.md": "1e5e7eaf3555e61d6a2e900089c676527d26259501db5594f59544b6c664f85a",
+        "rules/rendering-animate-svg-wrapper.md": "9c6ae0ca7a51434e803887c64cded760956579a1452ccb80a461a03f9c937c77",
+        "rules/rendering-conditional-render.md": "2ec2fa23c4148285144687050c52369adba3da2fbe3d486f8d3e0aad8f06f2bc",
+        "rules/rendering-content-visibility.md": "64eee6d5b916fe74df33363994b27fc7f71bea3bcedc7ee04bda23107ca3e6e4",
+        "rules/rendering-hoist-jsx.md": "93b229560fae92005ed9a2a829064607b39b2e984e92d221d05b2d41df2b7c0e",
+        "rules/rendering-hydration-no-flicker.md": "dc7ab358c67c177bca6e6f360fbc935ebe4efa928c0ba3ebd3f9f3d9e2000ca3",
+        "rules/rendering-hydration-suppress-warning.md": "915bacb934e2927d84b37a3f3d225a47b309ac8f9e494ed2bcb66ce07c5676a2",
+        "rules/rendering-resource-hints.md": "351b1095d641717b930f1b2253282b7120af3023bc74e06c17675168d4286864",
+        "rules/rendering-script-defer-async.md": "4cea07b7875ba7fc2c7465ff23b63a2bb334f90aaf2d9293d38d67b05fdb32ab",
+        "rules/rendering-svg-precision.md": "ed468533f6e95f622859c884b122cf21f9f593ed6bb3d500a54de4b9f9bcb9fb",
+        "rules/rendering-usetransition-loading.md": "3a1249c3f13026b6f54ab5712c388df219d6af01b12aa542749acd99a46f4bc1",
+        "rules/rerender-defer-reads.md": "234050a77faf50cb306be10a9e15bd4421134ab5907e75f13e6d78e2bd262dc9",
+        "rules/rerender-dependencies.md": "17eb5830956fb56486fd3cfc7431f5849d39751730c05ad9e77dd4f0c27169c5",
+        "rules/rerender-derived-state-no-effect.md": "cb11ec76f50aa7b6847269f02d79b120c889a30d9ecd2c1d578f75144419c77a",
+        "rules/rerender-derived-state.md": "1c326bb67b01fb084eb00c8911b0a7cff54681c2315b629f88e49b64eaa6481d",
+        "rules/rerender-functional-setstate.md": "5e68df6b2ae8058e67f476ff1ac67bde159f5a9d18df439e46eabcdeb7b52e58",
+        "rules/rerender-lazy-state-init.md": "4ae844740f266fc8cbf050701230286624a2440ec5be67b9a63d9edc3c580573",
+        "rules/rerender-memo-with-default-value.md": "81c47476564ad8a79fc68fc442734255ca7d6829424359464503fda0a9f9a0dd",
+        "rules/rerender-memo.md": "1f258990c2f27ff6256b3cc5c43300631bb3f0d81f749aed08d07fcdcc131dd1",
+        "rules/rerender-move-effect-to-event.md": "abc2cbf167bee056743023351e96806a411d3398da8802093620aecf0721f029",
+        "rules/rerender-no-inline-components.md": "1cc32907a770272524ba682eef9e7efdd8ad4533b6f89b718a1fcd7d1d0eb6a3",
+        "rules/rerender-simple-expression-in-memo.md": "5bdcf2d1558ba5204e643c887b7b4060f89630969425651eb68e96427d97f800",
+        "rules/rerender-split-combined-hooks.md": "6f45d703343484ef9acef9388397f3642966ae6a5a258899a0cf1f9977cfbf6c",
+        "rules/rerender-transitions.md": "60f4033909a62df5e5b8c601494f9e50a562e2f8c1c2d81eac24f38142265f1c",
+        "rules/rerender-use-deferred-value.md": "8c3579576a61a949884167745dcfaf1d5426ba305cc61fd0a79602d70fda4909",
+        "rules/rerender-use-ref-transient-values.md": "f1a649af9d1d0b5c762f6c9c4c1c70c90d7df82aa10296ee87aadb78c1b76c54",
+        "rules/server-after-nonblocking.md": "d0b8d24a3db9f0f65f9e2bddbf230b0e03a5f60e1229d93a4a18f5e7a991c7c2",
+        "rules/server-auth-actions.md": "a2ca8aa102839251c7971ec784560fab943c20b36fe6f80365d4110c13260c23",
+        "rules/server-cache-lru.md": "1924b64561841923b88a657085097a0aeba3e0ba2d5470b9f5c15cc10d6ae70f",
+        "rules/server-cache-react.md": "fddeea6c870bb3da4134b61d54b7d09b83d2603f929b7547cd3dc1dc269edd5c",
+        "rules/server-dedup-props.md": "c2747424cdac46be62f835f245a0aa887b0090b416d28e2ac8676702645eeb37",
+        "rules/server-hoist-static-io.md": "5abea4dd882b13661bd5f7dfb93f9e547d5f08176c61c448ade91b210ed5d49f",
+        "rules/server-no-shared-module-state.md": "4d869bf1cd2f1632e5ca4c0e64b1cf0e71c5f5a0f940bc8a22174d205e735ed7",
+        "rules/server-parallel-fetching.md": "569a2e9fc04f9606686cd75c5894ef8781b502786a7fffe241396846c7733472",
+        "rules/server-parallel-nested-fetching.md": "ad5d9656984d4a959997a2367bf59cc6632297b4634a1dd13a087939d83f30b3",
+        "rules/server-serialization.md": "f4c7d68b29c82381baad059c4a7f09e868e71ec9c3115a26ad3ae7d24c0dfe1f"
+      }
+    },
+    {
+      "kind": "skill",
+      "name": "composition-patterns",
+      "repository": "https://github.com/vercel-labs/agent-skills",
+      "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "source_path": "skills/composition-patterns",
+      "destination": "skills/composition-patterns",
+      "license": "MIT",
+      "changes": [],
+      "files_sha256": {
+        "AGENTS.md": "89e3ddd58fcf99a53a50e25dfd21b8cde1be5f10b7df6bacd3dfa6796932f516",
+        "LICENSE.txt": "508a77d2e7b51d98adeed32648ad124b7b30241a8e70b2e72c99f92d8e5874d1",
+        "README.md": "85915a43a6f0b4efe525e3cf6398dd866166da2025837c4460468a24a940da94",
+        "SKILL.md": "e38e0eaa609316b10423a9a138ed95e35099accd3f735585295c8a8f165c28a3",
+        "metadata.json": "49262ed5cb4186f31ee980cf8d990be0170c51efed4908d0464a1cff9905bd05",
+        "rules/_sections.md": "a174213b87e6911e2b766995a2cbaf8d1534057076e82fb79fe3f0ecb38047df",
+        "rules/_template.md": "587f7d16b0660eb61fee4a4d3d7df2b3077d6835de170602c7d6e60bee559131",
+        "rules/architecture-avoid-boolean-props.md": "007555ebb020f4d552582a2c4db194db71a1fd33094012e5187bcfa4f8c392d5",
+        "rules/architecture-compound-components.md": "f246af13dc269b521cf20eb8ad99a0cb645beac381c8c9b117262c34612c8457",
+        "rules/patterns-children-over-render-props.md": "7c45a0d21b3c4126a32cba916ee31adeae195386ad1dbbe6634aedb7457aa0ad",
+        "rules/patterns-explicit-variants.md": "8c19e596e61807549d01ce8c6954c6358199f97a8511c0c02c625ec0efda8c0e",
+        "rules/react19-no-forwardref.md": "881830adb7534c4b2d70db426556646ad9837f5478f744f35641f635ada22227",
+        "rules/state-context-interface.md": "09e73afbf9285fa416679cc864a287b9e8b821d0969272ab784295386d8c9bc3",
+        "rules/state-decouple-implementation.md": "76a8c1eb29a70d8996ab3f71260345af2f7bc89deab815a421d6c87c6591a9c3",
+        "rules/state-lift-state.md": "74c54038a6c554c748fe31cec673b80861b5d920b7553cf78cdf10d18b4b759b"
+      }
+    },
+    {
+      "kind": "skill",
+      "name": "pdf",
+      "repository": "https://github.com/openai/skills",
+      "commit": "49f948faa9258a0c61caceaf225e179651397431",
+      "source_path": "skills/.curated/pdf",
+      "destination": "skills/pdf",
+      "license": "Apache-2.0",
+      "changes": [],
+      "files_sha256": {
+        "LICENSE.txt": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9",
+        "SKILL.md": "d108cf2b36355ab37eb5962933f4d09785ec002f3105c506129320209306b9d2",
+        "agents/openai.yaml": "f8b223e25343559f57e1839ccd849fd1494a9729da33da04bb5074b7f80f4887",
+        "assets/pdf.png": "17da356d195d4e3fa24f9becbee6b8d9e60e13005762b5ab0809c520c76da6ee"
+      }
+    },
+    {
+      "kind": "skill",
+      "name": "jupyter-notebook",
+      "repository": "https://github.com/openai/skills",
+      "commit": "49f948faa9258a0c61caceaf225e179651397431",
+      "source_path": "skills/.curated/jupyter-notebook",
+      "destination": "skills/jupyter-notebook",
+      "license": "Apache-2.0",
+      "changes": [
+        "Adapted CLI path to project-scoped installation; removed CODEX_HOME reassignment."
+      ],
+      "files_sha256": {
+        "LICENSE.txt": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9",
+        "SKILL.md": "fa7cd28bf1362bda2574a1478e6f1b7e57d410a5d7ed5ae9d637b6ee5b2e4872",
+        "agents/openai.yaml": "3a2d6a8f9ed10e18f6caa66aeb26a02305bc61f36fc4b333c904e02f9988fb9c",
+        "assets/experiment-template.ipynb": "25f85914103cd84244e20ef378f59097479c72481cd18d3a931354d107c3f300",
+        "assets/jupyter-small.svg": "a36bd27bef3775f111309241754b386db81e7d356f07672190e2fcb24478a250",
+        "assets/jupyter.png": "852fd5468885bb176d266d547e61684792332e44a88cfbc8cd07323937040ccb",
+        "assets/tutorial-template.ipynb": "704a809c09c7c9e6e5c437860df95524412b50c58571a14204610d73e0744765",
+        "references/experiment-patterns.md": "1ff9c04281c01e8e2209bde9f1fd910b8e4b620dd1f1f040e2101f1d88513a91",
+        "references/notebook-structure.md": "a85051a2e88fd3424bbed2636e952ec5f858e7efa4e076c28d62a8cc2cc9dc06",
+        "references/quality-checklist.md": "ed01afe6ff47714d85935d11053b64c414772f02250fdc604e3fca65e5139136",
+        "references/tutorial-patterns.md": "8c194bb640de2fb7747e3db87006ecec5219252d301f53670975dbb5310ff659",
+        "scripts/new_notebook.py": "a004e2ea3115edb24313928be0be6d1dc07e571d7ca6c1b24375f0569c616d2f"
+      }
+    },
+    {
+      "kind": "skill",
+      "name": "security-best-practices",
+      "repository": "https://github.com/openai/skills",
+      "commit": "49f948faa9258a0c61caceaf225e179651397431",
+      "source_path": "skills/.curated/security-best-practices",
+      "destination": "skills/security-best-practices",
+      "license": "Apache-2.0",
+      "changes": [],
+      "files_sha256": {
+        "LICENSE.txt": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9",
+        "SKILL.md": "7b3dae1ffc5434d890f3c65c8f552af52d0307fab3b35dec13013c9ca3844c4f",
+        "agents/openai.yaml": "6e9c6f2edce448eb2b589f81ad6e3f722665021785513bcbfd0bf7b86b529171",
+        "references/golang-general-backend-security.md": "a73c47c34497b120672d48411fe51dc90d426a571801a0b3f649e2ce4ec658b4",
+        "references/javascript-express-web-server-security.md": "427835cbb5be7ba96172ea6ca9af80ddd4419c833e9ebf870996740c80d8406c",
+        "references/javascript-general-web-frontend-security.md": "3a7bc7b3f6e7ff043db9dbaa8933894d7a19d987d0607e4ddae5d70184a63d63",
+        "references/javascript-jquery-web-frontend-security.md": "bcbad2fa6c2a02709e47e889e70102c76886bf36bc798624d27db570eccf40da",
+        "references/javascript-typescript-nextjs-web-server-security.md": "71c773f7a97ce60c853adfa100b3d88b3b7bc4c6b8acaef1432ffabd923ee182",
+        "references/javascript-typescript-react-web-frontend-security.md": "d3030c0f24bddb56b9bbb91bbec1ee49eb7778bce4d3e0297b2641b2fc6b0d9c",
+        "references/javascript-typescript-vue-web-frontend-security.md": "77c6a747f9f17e3df03aad0fcb20d99ac7898001b81aef8b80908e45ac14a688",
+        "references/python-django-web-server-security.md": "4fb69b5d45f10e588d1a8c35cdc5f59e18910f6b46a93e2d342d90f286f8dfd2",
+        "references/python-fastapi-web-server-security.md": "7383c7f4fc271190b05e562ada7e825982a2c76b6c79a9f95a1da7687b65a616",
+        "references/python-flask-web-server-security.md": "9606d69190c04c167fdeac57e61297547a57b0542fd89dede36f355970446929"
+      }
+    },
+    {
+      "kind": "skill",
+      "name": "security-threat-model",
+      "repository": "https://github.com/openai/skills",
+      "commit": "49f948faa9258a0c61caceaf225e179651397431",
+      "source_path": "skills/.curated/security-threat-model",
+      "destination": "skills/security-threat-model",
+      "license": "Apache-2.0",
+      "changes": [],
+      "files_sha256": {
+        "LICENSE.txt": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9",
+        "SKILL.md": "1283c0dd62a8104d9edda4583569b5d8510b4ddaa45120687c999250fd96bad2",
+        "agents/openai.yaml": "3319b59736312abceca614e341c0e59cae47263e3b58a22b2b5ddf1e5fc8c227",
+        "references/prompt-template.md": "81a59aa3fb3ac3a739d6a26ab38e4015965f215581ee54becef21a2b121ec29b",
+        "references/security-controls-and-assets.md": "d536cfa9acad2523dc39134bcf33b9566c29dd9a57b407cbc9901637230c6b98"
+      }
+    },
+    {
+      "kind": "skill",
+      "name": "differential-review",
+      "repository": "https://github.com/trailofbits/skills",
+      "commit": "2be6433b39e009cd2b6fd3be1895f6b1faa5af9a",
+      "source_path": "plugins/differential-review/skills/differential-review",
+      "destination": "skills/differential-review",
+      "license": "CC-BY-SA-4.0",
+      "changes": [
+        "Bundled plugin-level agent prompts under agents/; repaired relative agent paths: "
+      ],
+      "files_sha256": {
+        "LICENSE.txt": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+        "SKILL.md": "f9af6a8193fc1a9f8ca3c54bb8d19095a5f20c9472ca6d014488bbde50b67da0",
+        "adversarial.md": "3cb823f38c6e551cbcf5f72325d2bb219dacdad774072519c31d50d92db19800",
+        "agents/adversarial-modeler.md": "f7be8413601990ceae260f2b1e3557f6d33022e7c4279eaedbed0a7d3bc919e6",
+        "agents/openai.yaml": "0279d56f88dc1a04d4b1941a25fa7672912a3ceb0557b13c38d069908b30ae61",
+        "assets/trail-of-bits-mark.svg": "4bf74c789b38dcf6ad762c136b6832363d27ae19fbaa9a18ec18d66ecce6ca05",
+        "methodology.md": "16b335d24cf2145e3dc4a37f50056550d29db2efa20e6df78fec95ec1e6fb0b4",
+        "patterns.md": "52abb18abbc73502a3d3b2f36a7a035adc1db40fd812d1d5424cf065036a06e9",
+        "reporting.md": "0016876dc6f158e926448bff1b6f634796757c7afe09dff177cfe30250724fc4"
+      }
+    },
+    {
+      "kind": "skill",
+      "name": "modern-python",
+      "repository": "https://github.com/trailofbits/skills",
+      "commit": "2be6433b39e009cd2b6fd3be1895f6b1faa5af9a",
+      "source_path": "plugins/modern-python/skills/modern-python",
+      "destination": "skills/modern-python",
+      "license": "CC-BY-SA-4.0",
+      "changes": [],
+      "files_sha256": {
+        "LICENSE.txt": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+        "SKILL.md": "ef774b925eb1d1fc12e4f5ddc3f5ad925ecd795315827447228c70cc44c6170c",
+        "agents/openai.yaml": "f56c544187af5bd3c76f1cd082619644090ab7b6d8abe77d4d3115d39dced5c1",
+        "assets/trail-of-bits-mark.svg": "4bf74c789b38dcf6ad762c136b6832363d27ae19fbaa9a18ec18d66ecce6ca05",
+        "references/dependabot.md": "d3678e32472305c0ef136bca99b26c3f75554d63675930e396f26a91a97451ad",
+        "references/migration-checklist.md": "58c947e6200a91f350c9adc898af7fc6263fda41d36ae81ffd4dd923b3a1015e",
+        "references/pep723-scripts.md": "c348b136613a4fed8f623d6013c0c6413d2c24f2973b2e5f85b80ecc68646045",
+        "references/prek.md": "4be1c181c71aab64ba58573242a1c451d576a5c61ceeb400bb5827f4e1f9532a",
+        "references/pyproject.md": "aec906835ec687024700d31e5c146baaabc9524129384304857b3aa81809401b",
+        "references/ruff-config.md": "8d247862f1beaf76816ed6775f5a0c8dc96d74c7f2b71bbf1aaedc4937373b17",
+        "references/security-setup.md": "32d6754a87d5006f923706d10446cc617cb22d36cfc30b55d39bd7f4c61d864c",
+        "references/testing.md": "82e36068fbf28a9615d3c96e5d946e304ce8f89ae1ba7475d20934501d55b0d9",
+        "references/uv-commands.md": "348cd69e8c780a0c7d54a2fac3c2956c7efe5630229782753da1685416672cdc",
+        "templates/dependabot.yml": "a85ede8ff9cc3a2f63cb1fba24e65c36a5885ecc95722af15157dc5258f28a12",
+        "templates/pre-commit-config.yaml": "18efd067e75cba5fc71705c2f90c548a03c3cded4cd2a7f9b4a1d617e115db0d"
+      }
+    },
+    {
+      "kind": "skill",
+      "name": "property-based-testing",
+      "repository": "https://github.com/trailofbits/skills",
+      "commit": "2be6433b39e009cd2b6fd3be1895f6b1faa5af9a",
+      "source_path": "plugins/property-based-testing/skills/property-based-testing",
+      "destination": "skills/property-based-testing",
+      "license": "CC-BY-SA-4.0",
+      "changes": [
+        "Moved unsupported effort frontmatter into metadata.upstream-effort for Codex format compatibility."
+      ],
+      "files_sha256": {
+        "LICENSE.txt": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+        "README.md": "ffbe30eec09cc64fb1eae836b07ca1d82939bda3f1e6f0dceadcdd78793a3112",
+        "SKILL.md": "3cdcf9e018a054edb7a00f9da05ed79c30970b865c1653e6129ef479e759ef53",
+        "agents/openai.yaml": "51d635deefa254d8cdf6dc56450851b6ec9545cd37f88a4eb4035cf3f2262fff",
+        "assets/trail-of-bits-mark.svg": "4bf74c789b38dcf6ad762c136b6832363d27ae19fbaa9a18ec18d66ecce6ca05",
+        "references/generating.md": "c0e72dfc89babe3c32de718b81b94044362c85e776d7475e950dfeaab78bb58e",
+        "references/interpreting-failures.md": "dbae7db8773712ba03268a3d56ea5aa6720af0650a5189580bfd88aa2edc3f9a",
+        "references/libraries.md": "f7218acf8e668130ef3048983472579d04e12030c5401926f666363e5f69c686",
+        "references/refactoring.md": "6eb5c206f575704791f089608bb06e41d6eed91b9d3c7fb27912f969aed07a18",
+        "references/reviewing.md": "110b08118a1e7b1a2566def6e9d2a0bf43fc2deefce857d2ce3b4382b07bc774"
+      }
+    },
+    {
+      "kind": "skill",
+      "name": "sharp-edges",
+      "repository": "https://github.com/trailofbits/skills",
+      "commit": "2be6433b39e009cd2b6fd3be1895f6b1faa5af9a",
+      "source_path": "plugins/sharp-edges/skills/sharp-edges",
+      "destination": "skills/sharp-edges",
+      "license": "CC-BY-SA-4.0",
+      "changes": [
+        "Bundled plugin-level agent prompts under agents/; repaired relative agent paths: "
+      ],
+      "files_sha256": {
+        "LICENSE.txt": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+        "SKILL.md": "3b69a709c2f8f0cfcf57d40a3186e166f307865cc8ed924be4098e549a121e9c",
+        "agents/openai.yaml": "d18c31ffb600df69db714161add9a1fe1dca38011b52a0c8926d4d4d3fb1ea4f",
+        "agents/sharp-edges-analyzer.md": "c9df773b4a8a56ed88179ef46b8b4eada44092fe4227a683d37bd5219bcbbdae",
+        "assets/trail-of-bits-mark.svg": "4bf74c789b38dcf6ad762c136b6832363d27ae19fbaa9a18ec18d66ecce6ca05",
+        "references/auth-patterns.md": "1fbf526ca1db7204f9ebb1bf4eb3c48c544676623d23e5d28e01f6f63c355be2",
+        "references/case-studies.md": "2e81a320728b4597bf84c490176d5bf212f1e6ba6f87aafba61ad1734de35332",
+        "references/config-patterns.md": "1d99f2716f7bef18efe71015ce0c56e0f4961c042faa503d796d6d4d1626fdc6",
+        "references/crypto-apis.md": "8baddc83a1f964d6d8b15678d60a37c93029c18dc162bd7c00895e585ff1a825",
+        "references/lang-c.md": "d077d711c73749c924eae81c06018b14bbf1ec9b93d71723c472b43df5d7d5ae",
+        "references/lang-csharp.md": "8fa9e93d36c0e1397b7ca81307163370fc43cf700215b7c6d7aa1b09fdb91fb4",
+        "references/lang-go.md": "839c0e7b4e3fa2f3b37c651e926aa59d69d20bfef5e67f569eedacf11354844d",
+        "references/lang-java.md": "3b93b6049f7e0e356a1ffebc0b4642f3cef315d90be45b63e15c8c4814f9ebeb",
+        "references/lang-javascript.md": "cf72f55d31318666942a8d1d64340befc3c4e7223afc2ca196e6a776ffa4c895",
+        "references/lang-kotlin.md": "c891148c10a4941c3396416a10ac64512eb3a9e13ea5eeaec3902da4b51501dd",
+        "references/lang-php.md": "7960d9773874cf06c5b470a5ca3ab406d896e66b71e713d809bc1ecfcab63485",
+        "references/lang-python.md": "36543becc25b4e3f41eaedcab62e9b204657e6742b8ac95e405bcd040d33bf03",
+        "references/lang-ruby.md": "d9ba749caaccb8a3bb39e2199b2062c0957cf48739218ba8022d49be5cba2088",
+        "references/lang-rust.md": "3d14993ea70b2b2df3fc0f388cbd1631470895c27ccbd9d764296d1da8f5b6ee",
+        "references/lang-swift.md": "a64ab8692db0f3e43526088c63c7fdcb7354d1b24e6fe7ca759aea3260890e04",
+        "references/language-specific.md": "4522b4a37cfd7d3aa689209dfd4569f3b39074bd1f5987a36a6e819f501141b6"
+      }
+    },
+    {
+      "kind": "skill",
+      "name": "audit-context-building",
+      "repository": "https://github.com/trailofbits/skills",
+      "commit": "2be6433b39e009cd2b6fd3be1895f6b1faa5af9a",
+      "source_path": "plugins/audit-context-building/skills/audit-context-building",
+      "destination": "skills/audit-context-building",
+      "license": "CC-BY-SA-4.0",
+      "changes": [
+        "Bundled plugin-level agent prompts under agents/; repaired relative agent paths: "
+      ],
+      "files_sha256": {
+        "LICENSE.txt": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+        "SKILL.md": "33fa693dc6e166cfa4919e4373cb6578c009d296234c2ae7cb3cd4e79b443765",
+        "agents/function-analyzer.md": "d450f462b63dac6858015340a2e047293851d7e3c671725792d9770dca107d29",
+        "agents/openai.yaml": "1d66ff830ff41ce751286d588a0ffeb95ed56d1b42e279fa2c8eebff10f4e59e",
+        "assets/trail-of-bits-mark.svg": "4bf74c789b38dcf6ad762c136b6832363d27ae19fbaa9a18ec18d66ecce6ca05",
+        "resources/ANALYSIS_FORMAT.md": "029532945776fb0fcbc866f19cd6114fe4152cd3dea1c0f44b266ec13a2cc6e8",
+        "resources/DOMAIN_NOTES.md": "ca3090f7f8d18f7145b253b283f5d33c36b314cea231aae8466bf23f122e2ed1",
+        "resources/FUNCTION_MICRO_ANALYSIS_EXAMPLE.md": "3351010d83b61bfb34a0359498f153817fdfa6528cead54536b06e035ff2399c"
+      }
+    },
+    {
+      "kind": "skill",
+      "name": "dimensional-analysis",
+      "repository": "https://github.com/trailofbits/skills",
+      "commit": "2be6433b39e009cd2b6fd3be1895f6b1faa5af9a",
+      "source_path": "plugins/dimensional-analysis/skills/dimensional-analysis",
+      "destination": "skills/dimensional-analysis",
+      "license": "CC-BY-SA-4.0",
+      "changes": [
+        "Bundled plugin-level agent prompts under agents/; repaired relative agent paths: SKILL.md",
+        "Repaired bundled dimension-propagator reference to ../references/."
+      ],
+      "files_sha256": {
+        ".calcifier/recipe.py": "1cf1f7483f4789066b5b3c126a0590aecee87884cf9b6d8430d6e139c3832766",
+        "LICENSE.txt": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+        "SKILL.md": "9e1b91045d143f1df2aadfd5e809f23d7eea8558ecea0cdf8a9433545e2e3c74",
+        "agents/arithmetic-scanner.md": "9083b95023653649d84a8a3a5e97f8016dabef7d07bc8ea46a1217872ea66145",
+        "agents/dimension-annotator.md": "29ab595a4d4361062f542bffdf89d613eebe9a800f566fcc17788d3b7e2c049c",
+        "agents/dimension-discoverer.md": "520971dca1b7a9fbc3f6595732a4ab8af0f473452487c14f5ebfa97c9b3a2863",
+        "agents/dimension-propagator.md": "87cbccf5d5aa71ccb64ae3b551af8f1c530504237667c014bb82a84171526bb0",
+        "agents/dimension-validator.md": "1235c0bc3377ff8efd272026ada7787a5cd1dca3bb38dc3d1f5f40b38a88046b",
+        "agents/openai.yaml": "8eb086b9bef1931846cbd85a14f2803bc7597dcef78c7c03d7fe98756a82f412",
+        "assets/trail-of-bits-mark.svg": "4bf74c789b38dcf6ad762c136b6832363d27ae19fbaa9a18ec18d66ecce6ca05",
+        "references/annotate.md": "c7d1a0987d4da875067ee8523c1a0f40984eae4c6e6b344df59d2bbf3b7f0cd9",
+        "references/bug-patterns.md": "36818df67fc45815ce288412fac6d0bdd93da5e856d7cf8dcbe56b1d255dd526",
+        "references/common-dimensions.md": "5743496a380719fc601b592abbe357c0d2d95273ae38b019ff6da28cac77ee2d",
+        "references/dimension-algebra.md": "e60adc2108c89cb698626a8c62fe3ed65480e434c00b44a2bc9f2e43deb2bfd7",
+        "references/step1.md": "a8efef39c615993eb99f3d8739f640f283ef05ef9c092ef235b5082a455736d6",
+        "references/step2.md": "4b56acee23259c5528b28c035e61ce5d2db7720003a49d4c1bf0a84d18da8460",
+        "references/step3.md": "e6a43d2fc5f7a7adf0df560627add775d2b3f3b3da6044d31212fc4d8948ff77",
+        "references/step4.md": "5512f35bc4c458e0ea311b29397a92dc5ec4b788f9ddd4adbe7ef31c14a30f09"
+      }
+    },
+    {
+      "kind": "templates",
+      "name": "spec-kit",
+      "repository": "https://github.com/github/spec-kit",
+      "commit": "ba7894dafb178da085347efe2bec69038e820d71",
+      "source_path": "templates",
+      "destination": "vendor/spec-kit",
+      "license": "MIT",
+      "changes": [],
+      "files_sha256": {
+        "LICENSE": "2510b446bc1f0cf9702453075d20cd88631e20e5642658edb7325d9c1eb534f7",
+        "checklist-template.md": "c65b7f10aa9a965ea9c7f4e879d4ab0240665473731c5e9e638c4acb3ca9afc4",
+        "constitution-template.md": "ce7549540fa45543cca797a150201d868e64495fdff39dc38246fb17bd4024b3",
+        "plan-template.md": "dfba43da2b2a207ff8c177a0fba03af074fd45e261696b4b64172041fad2e992",
+        "spec-template.md": "3945437fc35cd30a5b2bf7beea680337c3516826d3efa5a6b92c4a7eca1ba28e",
+        "tasks-template.md": "1e448e9153462e8c5b5a55231a54c756d870a82950d4dd9425a2bf5b7008a0d9"
+      }
+    },
+    {
+      "kind": "skill",
+      "name": "executing-plans",
+      "repository": "https://github.com/obra/superpowers",
+      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "source_path": "skills/executing-plans",
+      "destination": "skills/executing-plans",
+      "license": "MIT",
+      "changes": [],
+      "files_sha256": {
+        "LICENSE.txt": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+        "SKILL.md": "e4649e59880ef2643d1da128e3d607e87e3f969410d72095a5bf65811b6036dc",
+        "scripts/task-done": "d0d4f2397c85a4426443ea955e699ef12568b41b408ec6122d4ec2433ee3a5f6",
+        "scripts/task-start": "f833693c8fce3700fc9f841562d80f8015cd40f652c168a3405ac3e46947a1fe"
+      }
+    },
+    {
+      "kind": "skill",
+      "name": "finishing-a-development-branch",
+      "repository": "https://github.com/obra/superpowers",
+      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "source_path": "skills/finishing-a-development-branch",
+      "destination": "skills/finishing-a-development-branch",
+      "license": "MIT",
+      "changes": [],
+      "files_sha256": {
+        "LICENSE.txt": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+        "SKILL.md": "8db5a922b242dd4e1bf824cb91c13b3e8d8e8a86d6ceaf7f0774eb9cce909d65"
+      }
+    }
+  ],
+  "mcp_packages": [
+    {
+      "name": "filesystem",
+      "package": "@modelcontextprotocol/server-filesystem",
+      "version": "2.1.0",
+      "lockfile": "mcp/servers/filesystem/package-lock.json",
+      "lockfile_sha256": "ad374114d3396a7318286c355e01842dd1012e0428c78cdb54342010a77c0710",
+      "integrity": "sha512-BMihuyTNi975iQTQDsZ6x+JVg99CAiX83jBV0wGMyc/0DcBO55ulCQqEzwx7lbG5U9/97XiPP9n0sK/iUtSsEg=="
+    },
+    {
+      "name": "memory",
+      "package": "@modelcontextprotocol/server-memory",
+      "version": "2.0.1",
+      "lockfile": "mcp/servers/memory/package-lock.json",
+      "lockfile_sha256": "6b78253d7f5ce47f001119085bdc1bb0855acb175de88945ed4dc62e01e33a97",
+      "integrity": "sha512-RbX5cm/OUbvBguVzHhJIqvG15b5K/bLODtQhHeQTkuM6XrijDtCFLl2THgLDg9JnS6pUBomNWq9n5G2bQwxD3A=="
+    },
+    {
+      "name": "sequential-thinking",
+      "package": "@modelcontextprotocol/server-sequential-thinking",
+      "version": "2.0.0",
+      "lockfile": "mcp/servers/sequential-thinking/package-lock.json",
+      "lockfile_sha256": "238a5166d77120dfc66a49ed3e864e96e97d49ba392ec75c1efc22f08e05e1dc",
+      "integrity": "sha512-LAljkLByTHuOOPoQHAGNX5EiUJAvYuuTG7yEvdK5pRg7s7oxchNh8LwSkcuW3Y8bvQk4uZgjbjH3x7rNKpJ3Iw=="
+    },
+    {
+      "name": "context7",
+      "package": "@upstash/context7-mcp",
+      "version": "4.4.4",
+      "lockfile": "mcp/servers/context7/package-lock.json",
+      "lockfile_sha256": "40a966445a4268aa7fca48b37f9d775304811db5763312300145a47544c5ce32",
+      "integrity": "sha512-T2DkjhweDnC2mRAclDiTrPG3KI1zYKhhjgY2SMKD9PVrbEaGD8x35VsIOqpwwDc2qiKBvfYCF/jqr+jQMu5PUA=="
+    },
+    {
+      "name": "dbhub",
+      "package": "@bytebase/dbhub",
+      "version": "1.5.0",
+      "lockfile": "mcp/servers/dbhub/package-lock.json",
+      "lockfile_sha256": "1f0322ade467482d844f00dd0dbc017ed72d011d37fd7cca58753623a5d2e3fb",
+      "integrity": "sha512-oKBOf7LHb7X/jgCBCQscKAz8xHHIKI2XqNhcazGcsvO0QinHFFbqw+Zahgm1FBJoCBJk+Wn3hij7I0lsrtZmkg=="
+    }
+  ]
+}
