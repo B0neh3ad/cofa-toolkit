@@ -1,0 +1,16 @@
+# 커밋 제외 예시이며, AI의 파일 접근을 차단하지 않는다.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+__pycache__/
+.pytest_cache/
+node_modules/
+.venv/
+.evidence/
+.parallel/
+cofa-worktree-lab-*/
+
+# 데이터와 결과물은 과제의 제출 규칙에 따라 별도로 판단한다.
+# 필요한 제출물을 실수로 제외하는 전체 폴더 패턴을 추가하지 않는다.

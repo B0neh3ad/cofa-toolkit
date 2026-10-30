@@ -1,0 +1,145 @@
+{
+  "checked_on": "2026-10-30",
+  "note": "Links only. No third-party files are bundled. Review the current contents, license, dependencies and assessment restrictions before use. Record the exact commit when importing a repository.",
+  "codex_docs": [
+    {
+      "topic": "subagents",
+      "url": "https://learn.chatgpt.com/docs/agent-configuration/subagents"
+    },
+    {
+      "topic": "skills",
+      "url": "https://learn.chatgpt.com/docs/build-skills"
+    },
+    {
+      "topic": "AGENTS.md",
+      "url": "https://learn.chatgpt.com/docs/agent-configuration/agents-md"
+    }
+  ],
+  "repositories": [
+    {
+      "name": "openai/plugins",
+      "url": "https://github.com/openai/plugins",
+      "priority": "reference",
+      "use": "Current official Codex plugin examples; inspect individual skills rather than enabling external integrations by default."
+    },
+    {
+      "name": "openai/skills",
+      "url": "https://github.com/openai/skills",
+      "priority": "legacy-reference",
+      "use": "Legacy catalog; its README marks the repository deprecated and points to openai/plugins. Do not assume the exam client supports newer packaging."
+    },
+    {
+      "name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "priority": "shortlist",
+      "use": "Read systematic-debugging and verification-before-completion; avoid importing every workflow or executing upload, issue, merge or publishing steps."
+    },
+    {
+      "name": "steipete/agent-scripts",
+      "url": "https://github.com/steipete/agent-scripts",
+      "priority": "reference",
+      "use": "Examples of concise project instructions and portable helpers. Personal paths, global sync scripts, browser automation and release actions are not a ready-made exam setup."
+    },
+    {
+      "name": "humanlayer/12-factor-agents",
+      "url": "https://github.com/humanlayer/12-factor-agents",
+      "priority": "read",
+      "use": "Read the context-window, control-flow, error-compaction and small-focused-agent principles."
+    },
+    {
+      "name": "vercel-labs/agent-skills",
+      "url": "https://github.com/vercel-labs/agent-skills",
+      "priority": "conditional",
+      "use": "React best practices and web-design-guidelines for relevant web tasks; do not enable deployment or unrelated services."
+    },
+    {
+      "name": "trailofbits/skills",
+      "url": "https://github.com/trailofbits/skills",
+      "priority": "conditional",
+      "use": "Differential review and insecure-defaults concepts for security-sensitive changes; full audit workflows may exceed a short task's time budget."
+    },
+    {
+      "name": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "priority": "conditional",
+      "use": "Document and workflow examples. Inspect each license and adapt tool-specific instructions; access to public text does not authorize using another AI service."
+    },
+    {
+      "name": "github/spec-kit",
+      "url": "https://github.com/github/spec-kit",
+      "priority": "templates",
+      "use": "Borrow small specification, task and verification templates. A full process installation may be unnecessary for a three-hour assessment."
+    },
+    {
+      "name": "openai/codex",
+      "url": "https://github.com/openai/codex",
+      "priority": "prompt-reference",
+      "use": "Read public base instructions and review rubric as implementation references; do not overwrite the provided client's system instructions or upgrade it."
+    }
+  ],
+  "specific_references": [
+    {
+      "topic": "Codex public base instructions",
+      "url": "https://github.com/openai/codex/blob/main/codex-rs/protocol/src/prompts/base_instructions/default.md"
+    },
+    {
+      "topic": "Codex public review rubric",
+      "url": "https://github.com/openai/codex/blob/main/codex-rs/prompts/templates/review/rubric.md"
+    },
+    {
+      "topic": "Verification before completion",
+      "url": "https://github.com/obra/superpowers/blob/main/skills/verification-before-completion/SKILL.md"
+    },
+    {
+      "topic": "Systematic debugging",
+      "url": "https://github.com/obra/superpowers/blob/main/skills/systematic-debugging/SKILL.md"
+    },
+    {
+      "topic": "Building effective agents",
+      "url": "https://www.anthropic.com/research/building-effective-agents"
+    }
+  ],
+  "toolkit_version": "3",
+  "local_tools": [
+    {
+      "path": "scripts/run_checks.py",
+      "purpose": "Run declared checks; preserve code hashes, timed execution results and comparable failure-to-pass transitions."
+    },
+    {
+      "path": "scripts/scan_secrets.py",
+      "purpose": "Local heuristic credential-pattern detection and partial log redaction; not a guarantee of no secrets."
+    },
+    {
+      "path": "scripts/worktree_lab.py",
+      "purpose": "Create a new local fixture repo and exercise two isolated worktrees, concurrent deterministic workers, completion-order integration and combined verification; no AI agents or network."
+    }
+  ],
+  "local_guides": [
+    "PRECHECK_15MIN.txt",
+    "templates/ENVIRONMENT.md",
+    "docs/PARALLEL_FAST_PATH.md",
+    "START_EXAM.txt",
+    "docs/WORKFLOW.md",
+    "docs/WORKED_EXAMPLES.md",
+    "docs/RETROSPECTIVE_NOTES.md",
+    "practice/PRACTICE.txt"
+  ],
+  "workflow_sources": [
+    {
+      "topic": "Participant retrospective; not current assessment rules",
+      "url": "https://brunch.co.kr/@luma/5"
+    },
+    {
+      "topic": "Git worktree behavior",
+      "url": "https://git-scm.com/docs/git-worktree"
+    },
+    {
+      "topic": "Git commit integration",
+      "url": "https://git-scm.com/docs/git-cherry-pick"
+    },
+    {
+      "topic": "Codex-managed worktrees; distinguish from manual Git worktrees",
+      "url": "https://learn.chatgpt.com/docs/environments/git-worktrees"
+    }
+  ]
+}
