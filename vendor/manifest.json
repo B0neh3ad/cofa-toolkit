@@ -20,7 +20,10 @@
         "defense-in-depth.md": "1e175fb86fc357e58c6aebf5441e481e1b7868b4380c0456b63a17eefbd18ba7",
         "find-polluter.sh": "dd7b8f13c4cc2a24b33ff87b18da9248f3e1c80a085c3316224f69ff0fa5c43c",
         "root-cause-tracing.md": "75b933b6a8c40bdb2031b10f21654395b56ec6ab6bc7b018c18d3fe57aeb7fb8"
-      }
+      },
+      "executable_files": [
+        "find-polluter.sh"
+      ]
     },
     {
       "kind": "skill",
@@ -34,7 +37,8 @@
       "files_sha256": {
         "LICENSE.txt": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
         "SKILL.md": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3"
-      }
+      },
+      "executable_files": []
     },
     {
       "kind": "skill",
@@ -49,7 +53,8 @@
         "LICENSE.txt": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
         "SKILL.md": "64b03fce4aee5a97a93160cea8111f3ba13a17b7c001db4bd5836d67fd10705d",
         "writing-good-tests.md": "51471c853306ff92ca8bb41dcaea05f31c0e46b03651f8f3c99754b7172f4ae1"
-      }
+      },
+      "executable_files": []
     },
     {
       "kind": "skill",
@@ -63,7 +68,8 @@
       "files_sha256": {
         "LICENSE.txt": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
         "SKILL.md": "1968923066f3b707eb01d1992cdf4c42284c3855f70253b9cd5000ff45fca13c"
-      }
+      },
+      "executable_files": []
     },
     {
       "kind": "skill",
@@ -78,7 +84,8 @@
         "LICENSE.txt": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
         "SKILL.md": "2180e14a448e9410bec88e6646a2d1f0ce7fdd58de27388c1e052e929679d2bc",
         "code-reviewer.md": "82e370be6b3447523816286195571e4216ba56ba1ad6ad0e87862294c4c78dcb"
-      }
+      },
+      "executable_files": []
     },
     {
       "kind": "skill",
@@ -92,7 +99,8 @@
       "files_sha256": {
         "LICENSE.txt": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
         "SKILL.md": "091df1629510af1b92fc4abd6f96732ebedb4cb2c0f3457e8f2740b0504a2438"
-      }
+      },
+      "executable_files": []
     },
     {
       "kind": "skill",
@@ -106,7 +114,8 @@
       "files_sha256": {
         "LICENSE.txt": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
         "SKILL.md": "8cfb86f121269e8f7f12361e6795c4f6738828340e28964c9229d365666c9edd"
-      }
+      },
+      "executable_files": []
     },
     {
       "kind": "skill",
@@ -120,7 +129,8 @@
       "files_sha256": {
         "LICENSE.txt": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
         "SKILL.md": "a6c67c1900064347c2a329990dd3c555657c51c3ec53b259a08aa01a2c26139a"
-      }
+      },
+      "executable_files": []
     },
     {
       "kind": "skill",
@@ -147,7 +157,12 @@
         "scripts/sdd-workspace": "4fd9770e7a49b6bde488c0e92bac1b3bd01fcbdaf8f06b6c4efbe3a1abd99f86",
         "scripts/task-brief": "cc563538e09abf719b34ddf4b2fa7a65cf3b301729039dbfa923cb060f729146",
         "task-reviewer-prompt.md": "bfed55c8f19d0ff6ed57b0fe09127c92890e9311c6c73917129598826bf9ebe8"
-      }
+      },
+      "executable_files": [
+        "scripts/review-package",
+        "scripts/sdd-workspace",
+        "scripts/task-brief"
+      ]
     },
     {
       "kind": "skill",
@@ -168,7 +183,11 @@
         "scripts/start-server.sh": "a4e5ae84275bcaacd2f84345afeabe59cf7b00ba080e123da7cc1fb226f12847",
         "scripts/stop-server.sh": "0b5ccbbd57f62d3ed88993f7940b5ee0e5c0fc9b21c550c623da4f6292e47daf",
         "visual-companion.md": "6ffcb038b53254bd31debaa15e12dcd4ff24bd63d690e0b644ac6396701cf2e2"
-      }
+      },
+      "executable_files": [
+        "scripts/start-server.sh",
+        "scripts/stop-server.sh"
+      ]
     },
     {
       "kind": "skill",
@@ -596,7 +615,11 @@
         "SKILL.md": "e4649e59880ef2643d1da128e3d607e87e3f969410d72095a5bf65811b6036dc",
         "scripts/task-done": "d0d4f2397c85a4426443ea955e699ef12568b41b408ec6122d4ec2433ee3a5f6",
         "scripts/task-start": "f833693c8fce3700fc9f841562d80f8015cd40f652c168a3405ac3e46947a1fe"
-      }
+      },
+      "executable_files": [
+        "scripts/task-done",
+        "scripts/task-start"
+      ]
     },
     {
       "kind": "skill",
@@ -610,7 +633,8 @@
       "files_sha256": {
         "LICENSE.txt": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
         "SKILL.md": "8db5a922b242dd4e1bf824cb91c13b3e8d8e8a86d6ceaf7f0774eb9cce909d65"
-      }
+      },
+      "executable_files": []
     }
   ],
   "mcp_packages": [
