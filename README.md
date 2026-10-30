@@ -5,6 +5,9 @@
 연습 과제·데모 웹페이지·CSV 예제·워크트리 실습은 제거했습니다.
 `tests/`는 툴킷 자체의 회귀 검증이며 연습 문제가 아닙니다.
 
+바로 이동: [Skill 등록·호출](#원하는-skill-등록과-사용) · [MCP 등록·호출](#원하는-mcp-등록과-사용) ·
+[템플릿 복사·작성](#원하는-템플릿-사용) · [개별 선택 카탈로그](docs/CATALOG.md)
+
 ## 시험 초반 설정
 
 플랫폼 안의 허용된 터미널에서 이 공개 저장소를 가져옵니다. 실제 과제 루트를 확인하고,
@@ -32,6 +35,210 @@ python3 scripts/setup.py --target /실제/과제/루트 --all-skills --dry-run
 
 모든 자료는 저장소에 준비되어 있지만 전체 활성화는 선택입니다. 큰 참고 문서는 필요한 부분만 읽습니다.
 3시간 과제에서 전체 감사를 실행하거나 기존 스택을 바꾸는 것은 별도로 판단하세요.
+
+## 원하는 구성을 등록하기 전
+
+아래 `sh` 블록은 **터미널 명령**, `text` 블록은 **Codex 채팅에 넣을 프롬프트**입니다.
+플랫폼 안에서 가져온 `cofa-toolkit` 폴더로 이동한 터미널에서 경로를 한 번 지정합니다.
+
+```sh
+COFA_TOOLKIT="$PWD"
+COFA_PROJECT="/실제/과제/루트"
+python3 "$COFA_TOOLKIT/scripts/setup.py" --list
+```
+
+`COFA_PROJECT`를 README가 있는 실제 과제 경로로 바꿉니다. 경로에 공백이 있어도 따옴표를 유지합니다.
+이 변수는 같은 터미널에서만 유지됩니다. 새 터미널에서는 다시 지정하세요.
+**채팅 프롬프트의 `[툴킷 경로]`, `[과제 경로]`에는 실제 경로를 적습니다. 셸 변수는 채팅에서 자동 치환되지 않습니다.**
+
+## 원하는 Skill 등록과 사용
+
+### 명령으로 등록
+
+원하는 **폴더명**을 `--skill` 뒤에 넣습니다. 여러 개면 옵션을 반복합니다.
+먼저 `--dry-run`으로 복사 계획만 보고, 끝의 `--dry-run`을 빼면 실제로 등록합니다.
+
+```sh
+python3 "$COFA_TOOLKIT/scripts/setup.py" --target "$COFA_PROJECT" \
+  --skill domain-discovery --skill data-quality --dry-run
+
+python3 "$COFA_TOOLKIT/scripts/setup.py" --target "$COFA_PROJECT" \
+  --skill domain-discovery --skill data-quality
+```
+
+등록 위치는 `[과제 경로]/.agents/skills/선택한폴더/`입니다. 사용자 전역 Skill은 바꾸지 않습니다.
+묶음 선택은 `--profile core --profile data`처럼 프로필을 반복합니다. 개별 `--skill`과 함께 써도 됩니다.
+
+| 출력 | 의미와 다음 행동 |
+|---|---|
+| `copy` | 실제 실행이면 복사 완료, dry-run이면 복사 예정 |
+| `unchanged` | 이미 같은 내용이 있어 재복사하지 않음 |
+| `skipped-existing` | 기존 내용이 달라 보존함. 원본과 비교해 필요한 변경만 합침 |
+
+### Codex에게 등록을 맡기는 프롬프트
+
+```text
+툴킷은 [툴킷 경로], 실제 과제는 [과제 경로]에 있어.
+툴킷의 scripts/setup.py로 domain-discovery와 data-quality만 이 과제에 등록해줘.
+기존 Skill과 지침은 보존하고, 등록된 경로와 실제 호출명을 알려줘.
+아직 업무 파일 구현이나 MCP 설치는 시작하지 마.
+```
+
+### 등록 후 호출
+
+**실제 과제 폴더에서 시작한 Codex**에서 `/skills` 또는 `$` 선택 목록으로 확인합니다.
+목록에 보이면 다음처럼 명시적으로 사용합니다.
+
+```text
+$domain-discovery 를 사용해 README와 제공 자료의 용어·단위·업무 규칙을 정리해줘.
+이미 확정된 요구는 활용하고, 구현 결과를 바꿀 미확인 정책만 짚어줘.
+```
+
+```text
+$data-quality 를 사용해 제공 데이터의 스키마·누락·중복·조인 키·집계 기준을 확인해줘.
+원본은 보존하고 표본 점검과 전체 검증을 구분해서 보고해줘.
+```
+
+등록 명령의 폴더명과 `$` 호출명은 다를 수 있습니다. 예를 들어
+`--skill react-best-practices`의 호출은 `$vercel-react-best-practices`입니다.
+`/skills`가 없거나 새 Skill이 보이지 않으면 제공 버전의 `/help`를 확인하고 새 세션에서 다시 봅니다.
+자동 발견을 지원하지 않으면 다음처럼 **파일을 직접 읽게 하는 방식**으로 적용합니다.
+
+```text
+[과제 경로]/.agents/skills/data-quality/SKILL.md를 읽고 이번 데이터 검증에 적용해줘.
+이 방식으로 읽은 것과 Skill 자동 등록·발견 여부는 구분해서 알려줘.
+```
+
+[공식 Skill 발견·호출 설명](https://learn.chatgpt.com/docs/build-skills)
+
+## 원하는 MCP 등록과 사용
+
+**패키지 설치 → 설정 조각 생성 → 플랫폼에 등록 → 연결·호출 확인**의 순서입니다.
+`mcp_config.py` 실행만으로 플랫폼 MCP 등록까지 완료되는 것은 아닙니다.
+
+### 선택한 서버 설치와 설정 생성
+
+```sh
+python3 "$COFA_TOOLKIT/scripts/mcp_config.py" --list
+node --version
+
+python3 "$COFA_TOOLKIT/scripts/mcp_config.py" --project "$COFA_PROJECT" \
+  --servers memory --install --output "$COFA_PROJECT/.cofa/mcp-memory.json"
+```
+
+`--servers`에는 아래 MCP 선택표의 이름을 넣습니다. 여러 개는 `--servers memory filesystem`처럼
+공백으로 나열합니다. `--install`은 선택 서버만 설치하며 Node 요구사항이 맞지 않으면 멈춥니다.
+이미 설치되어 있으면 `--install`을 생략할 수 있습니다. 기존 출력 파일의 내용이 다르면 덮어쓰지 않으므로
+다른 출력 파일명을 쓰거나 기존 조각과 명시적으로 합칩니다.
+
+용도별 설정 예시는 다음과 같습니다. **필요한 한 가지 명령만 골라 실행**합니다.
+
+```sh
+# 공개 라이브러리 문서 조회
+python3 "$COFA_TOOLKIT/scripts/mcp_config.py" --project "$COFA_PROJECT" \
+  --servers context7 --install --output "$COFA_PROJECT/.cofa/mcp-context7.json"
+
+# 기존 로컬 SQLite 조회: DB 경로를 실제 파일로 바꾸기
+python3 "$COFA_TOOLKIT/scripts/mcp_config.py" --project "$COFA_PROJECT" \
+  --servers dbhub --database "$COFA_PROJECT/data.db" --install \
+  --output "$COFA_PROJECT/.cofa/mcp-db.json"
+
+# 공개 OpenAI 문서: npm 설치와 Node가 필요 없는 HTTP 설정
+python3 "$COFA_TOOLKIT/scripts/mcp_config.py" --project "$COFA_PROJECT" \
+  --servers openai-docs --output "$COFA_PROJECT/.cofa/mcp-openai-docs.json"
+```
+
+### Cofa MCP 탭에 등록
+
+1. 생성된 JSON을 플랫폼 에디터에서 열거나 터미널에서 확인합니다.
+   예: `cat "$COFA_PROJECT/.cofa/mcp-memory.json"`.
+2. 플랫폼의 **MCP 탭**에서 기존 설정을 확인합니다. 생성한 JSON의 `mcpServers` 안에 있는
+   선택 서버 항목을 기존 설정에 합칩니다. 탭이 요구하는 JSON 구조가 다르면 해당 구조에 맞춥니다.
+3. 저장한 뒤 제공 Codex에서 `/mcp`로 활성 서버와 도구를 확인합니다.
+   터미널의 `codex mcp list`는 설정 확인용이며, 실제 호출 성공까지 증명하지는 않습니다.
+4. 반영되지 않으면 새 Codex 세션에서 확인하고 플랫폼의 재연결 안내를 따릅니다.
+   전체 감독·응시 환경을 임의로 재시작하지 않습니다. 형식이 불명확하면 Cofa Helper에서 확인합니다.
+
+TOML을 사용하는 **설정 변경이 허용된 환경**에서는 다음처럼 조각을 생성해 기존 MCP 항목과 합칩니다.
+플랫폼이 MCP 탭에서 설정을 관리한다면 그 경로를 우선합니다.
+
+```sh
+python3 "$COFA_TOOLKIT/scripts/mcp_config.py" --project "$COFA_PROJECT" \
+  --servers memory --format toml --output "$COFA_PROJECT/.cofa/mcp-memory.toml"
+```
+
+### Codex에게 준비를 맡기는 프롬프트
+
+```text
+툴킷은 [툴킷 경로], 실제 과제는 [과제 경로]야.
+툴킷의 scripts/mcp_config.py로 memory MCP만 준비해줘.
+Node 요구사항을 확인하고 선택 패키지만 설치해 .cofa/mcp-memory.json을 생성해줘.
+관리 설정이나 기존 MCP 설정은 자동으로 덮어쓰지 마.
+내가 MCP 탭에 합칠 서버 항목과 등록 후 확인할 절차를 알려줘.
+설정 생성·연결 성공·실제 호출 성공을 구분해서 보고해줘.
+```
+
+### 등록 후 실제 호출
+
+```text
+연결된 cofa_memory 도구로 '구현 전에 실제 README를 확인한다'는 점검 메모를
+저장하고 다시 검색해줘. 실제 호출 결과로 연결을 확인하고 추측으로 성공 처리하지 마.
+```
+
+```text
+연결된 cofa_context7 도구로 pandas read_csv의 dtype 옵션에 대한 공개 문서를 찾아줘.
+공개 라이브러리 질문만 전달하고 과제 원문·코드·데이터·로그는 전송하지 마.
+```
+
+서버별 생성 이름은 `cofa_filesystem`, `cofa_memory`, `cofa_sequential_thinking`,
+`cofa_dbhub`, `cofa_context7`, `cofa_openai_docs`입니다. 해당 서버를 선택·등록했을 때만 호출합니다.
+MCP가 지원되지 않거나 연결이 실패하면 WORKLOG·터미널·기존 라이브러리로 진행합니다.
+[공식 Codex MCP 설정·상태 확인 설명](https://learn.chatgpt.com/docs/extend/mcp)
+
+## 원하는 템플릿 사용
+
+### 선택한 파일만 복사
+
+```sh
+python3 "$COFA_TOOLKIT/scripts/setup.py" --target "$COFA_PROJECT" \
+  --template AGENTS.md --template WORKLOG.md --template DOMAIN_BRIEF.md \
+  --template DATA_CONTRACT.md
+```
+
+선택 파일이 **과제 루트**에 생깁니다. 기존 파일은 `skipped-existing`으로 보존합니다.
+추가 파일이 필요하면 `--template TASKS.md --template REVIEW.md`처럼 고릅니다.
+`--template`은 `templates/`의 15개 파일에 적용됩니다. `vendor/spec-kit/`의 원본 5개는 아래 참고 프롬프트로 사용합니다.
+
+### 복사한 템플릿을 실제 내용으로 채우는 프롬프트
+
+```text
+[과제 경로]의 README·기존 지침·제공 데이터를 먼저 확인해줘.
+툴킷은 [툴킷 경로]에 있어. 필요한 AGENTS.md, WORKLOG.md, DOMAIN_BRIEF.md,
+DATA_CONTRACT.md 템플릿을 선택해서 적용하고 실제 과제의 사실과 근거로 채워줘.
+기존 파일이 있으면 원래 요구를 보존하며 필요한 내용만 합쳐줘.
+빈칸·가정·미확인은 구분하고 실제 실행하지 않은 결과를 검증 완료로 적지 마.
+필수 제출 파일명이 따로 있으면 그 이름과 형식을 우선해줘.
+```
+
+AGENTS.md를 만들거나 합친 뒤 현재 세션에서 적용하려면 다음처럼 명시합니다.
+
+```text
+[과제 경로]/AGENTS.md를 다시 읽고 이후 작업에 적용해줘.
+현재 목표·진행·결정·검증·다음 행동은 WORKLOG.md에 필요한 만큼 갱신해줘.
+```
+
+AGENTS 외의 템플릿은 파일명만으로 자동 실행되지 않습니다. 복사만 한 빈 양식을 완성된 산출물로 취급하지 않습니다.
+`gitignore.example`도 `.gitignore`에 자동 병합되지 않으므로 기존 규칙과 필요한 패턴을 합칩니다.
+`CHECKS.json`은 실제 코드 경로와 검증 명령을 채우기 전에는 사용할 검증이 없습니다.
+
+Spec Kit의 긴 원본 양식이 필요할 때는 다음처럼 구조를 참고하게 합니다.
+
+```text
+[툴킷 경로]/vendor/spec-kit/spec-template.md와 tasks-template.md를 참고해줘.
+현재 과제에 필요한 요구·수용 기준·의존성·병렬 작업 구조만 가져와
+기존 WORKLOG.md 또는 과제에서 요구한 문서에 반영해줘.
+예시 작업·치환자는 실제 내용으로 바꾸고 Spec Kit CLI 설치나 추가 프로세스는 시작하지 마.
+```
 
 ## Skill 선택표
 
