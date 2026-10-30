@@ -117,6 +117,7 @@
   "local_guides": [
     "PRECHECK_15MIN.txt",
     "templates/ENVIRONMENT.md",
+    "practice/browser/README.md",
     "docs/PARALLEL_FAST_PATH.md",
     "START_EXAM.txt",
     "docs/WORKFLOW.md",

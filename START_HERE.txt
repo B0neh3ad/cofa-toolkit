@@ -2,7 +2,8 @@ AI 협업 과제용 툴킷 v3
 
 이 폴더는 새로 작성한 범용 지침, 템플릿, 연습용 코드만 담고 있습니다.
 공식 시험 자료, 메일, 개인 접속 링크, 실제 시험 문제는 포함하지 않았습니다.
-현재는 로컬 파일이며 공개 저장소로 배포되거나 시험 환경에서 검증된 상태는 아닙니다.
+공개 저장소: https://github.com/B0neh3ad/cofa-toolkit
+시험 환경에서의 반입·실행은 직접 확인해야 합니다.
 
 읽는 순서
 0. PRECHECK_15MIN.txt: 사전 체험의 시간 배분과 templates/ENVIRONMENT.md 기록 양식
@@ -11,6 +12,7 @@ AI 협업 과제용 툴킷 v3
 3. templates/AGENTS.md와 WORKLOG.md: 공통 규칙과 현재 상태를 나누는 최소 양식
 4. docs/WORKFLOW.md: 검증과 실행 근거를 남기는 상세 방법
 5. practice/PRACTICE.txt: 기본 20분 과제와 반복 검증·인계 연습
+   practice/browser/README.md: 설치 없는 3분 서버·Browser·버튼·저장 연습
 6. PROMPTS.txt와 REFERENCES.json: 필요한 요청과 자료만 선택해서 참고
 
 시험 중 최소 구성
@@ -46,6 +48,11 @@ v3의 추가 도구와 Skill
 두 번째 명령은 초기 결함과 기대 출력 불일치를 검출하여 종료 코드 1을 반환합니다.
 실패를 보존하는 정상적인 동작입니다. 자세한 수정 전후 연습은 docs/WORKFLOW.md를 봅니다.
 세 번째 명령은 Git이 설치된 준비 환경에서 실행하는 별도 연습입니다.
+
+브라우저 연습 - 이 폴더에서 실행 후 서버 터미널 유지
+  python3 -m http.server 3000 --bind 0.0.0.0 --directory practice/browser
+플랫폼 Browser에서 실제 포트와 경로 /를 입력합니다.
+practice/browser/README.md의 추가·완료·삭제·새로고침 체크리스트로 직접 확인합니다.
 
 실제 과제에 적용
 - 과제 README와 기존 AGENTS.md를 먼저 확인합니다. 템플릿으로 덮어쓰지 않습니다.
